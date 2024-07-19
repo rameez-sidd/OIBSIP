@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* DECLARING CSS VARIABLES */
+:root {
+    --light-grey: rgb(236, 236, 236);
+    --grey: rgb(125, 125, 125);
+    --light-blue: #edf6ff;
+    --blue: #6daffe;
+    --dark-blue: #437fc7;
+    --darker-blue: #3868a3;
+    --brown: #b9732f;
+    --light-brown: #d19d69;
+    --white: #ffffff;
+    --padding-y: 50px;
+    --desc-font-weight: 300;
+    --desc-font-size: 20px;
+    --heading-font-weight: 800;
+    --heading-font-size: 35px;
+}
+
+/* DEFAULT SETTING FOR LINKS */
+a {
+    text-decoration: none;
+}
+
+/* STYLING HEADING FOR EACH SECTION OF THE PAGE */
+.section-heading {
+    text-align: center;
+    font-size: var(--heading-font-size);
+    font-weight: var(--heading-font-weight);
+}
+
+.section-desc {
+    text-align: center;
+    font-size: var(--desc-font-size);
+    font-weight: var(--desc-font-weight);
+}
+
+.section-heading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.section-heading-container .underline {
+    height: 7px;
+    width: 80px;
+    background-color: var(--dark-blue);
+}

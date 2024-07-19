@@ -1,0 +1,85 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 150px 80px;
+    gap: 60px;
+    background-color: var(--light-green);
+}
+
+main h3 {
+    font-size: 50px;
+}
+
+main #content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#content .project-card {
+    display: grid;
+    grid-template-columns: 40% auto;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px #00000069;
+}
+
+.project-card .project-thumbnail {
+    background-color: black;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    border-radius: 5px 0 0 5px;
+}
+
+.project-card #spotify {
+    background-image: url('../img/projects-thumbnail/spotify.png');
+}
+
+.project-card #restaurant {
+    background-image: url('../img/projects-thumbnail/restaurant.png');
+}
+
+.project-card #personal-site {
+    background-image: url('../img/projects-thumbnail/website.png');
+}
+
+.project-card #ddgo {
+    background-image: url('../img/projects-thumbnail/ddgo.png');
+}
+
+.project-card #bank {
+    background-image: url('../img/projects-thumbnail/bank.png');
+}
+
+.project-card #login {
+    background-image: url('../img/projects-thumbnail/login.png');
+}
+
+.project-card .project-details {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+.project-details .project-title {
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.project-details .project-btns {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.project-details .project-btns a {
+    background-color: black;
+    padding: 8px 12px;
+    border-radius: 5px;
+}

@@ -1,0 +1,90 @@
+#about-me {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    background-color: #e0e0e0;
+    height: 100vh;
+}
+
+#about-me #photo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 50px;
+}
+
+#about-me #photo #image-container {
+    display: grid;
+    place-items: center;
+    width: 400px;
+    height: 400px;
+    box-shadow: 20px 20px 60px #bebebe,
+        -20px -20px 60px #ffffff;
+    border-radius: 50%;
+}
+
+#about-me #photo img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+#about-me #text {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    padding-right: 100px;
+    gap: 10px;
+}
+
+#skill-set {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#skill-set h3 {
+    padding: 80px 40px 0;
+}
+
+#skill-set>div {
+    display: flex;
+    padding: 0 40px;
+    gap: 15px;
+}
+
+#skill-set #skill-container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 100%;
+}
+
+#skill-container .skill-card {
+    display: grid;
+    grid-template-columns: 20% auto;
+    padding: 0 10px;
+}
+
+.skill-card .skill-type {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.skill-card .skills {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.skills .skill-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-info .skill-logo img {
+    width: 70px;
+}

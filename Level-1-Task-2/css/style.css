@@ -1,0 +1,122 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 300px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+header #logo {
+    display: grid;
+    place-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+nav>a:hover {
+    color: var(--yellow);
+}
+
+#hero-section {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 12%, rgba(255, 255, 255, 0) 60%), url('../img/bg.png'), no-repeat, black;
+    background-size: cover;
+}
+
+#hero-section #content {
+    display: grid;
+    grid-template-columns: 60% auto;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#content #intro {
+    display: grid;
+    place-items: center;
+}
+
+#intro #container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    font-size: 30px;
+}
+
+#container #intro-title #name {
+    font-size: 70px;
+    font-weight: 800;
+    letter-spacing: 6px;
+    line-height: 70px;
+    color: var(--yellow);
+}
+
+#container #resume-btn {
+    max-width: 25%;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 30px;
+    border: 2px solid var(--yellow);
+    color: var(--yellow);
+    margin-top: 20px;
+    padding: 6px;
+    transition: all 0.2s ease;
+}
+
+#container #resume-btn:hover {
+    color: white;
+    background-color: var(--yellow);
+}
+
+#socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 25px;
+    position: fixed;
+    right: 0;
+    top: 80px;
+    bottom: 0;
+}
+
+#socials i {
+    font-size: 30px;
+    transition: transform 0.2s ease;
+}
+
+#socials i:hover {
+    transform: scale(1.13);
+}
+
+#socials .fa-instagram:hover {
+    color: #f35489;
+}
+
+#socials .fa-linkedin-in:hover {
+    color: #0077b5;
+}
+
+#socials .fa-github:hover {
+    color: black;
+}
+
+#socials .fa-whatsapp:hover {
+    color: #25d366;
+}
+
+#socials .fa-twitter:hover {
+    color: #1c9cea;
+}

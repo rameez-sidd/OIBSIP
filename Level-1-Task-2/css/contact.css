@@ -1,0 +1,101 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+main #contact {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% auto;
+    align-items: stretch;
+    padding: 20px 80px;
+    background-color: var(--warm-tan);
+}
+
+main #text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 50px;
+}
+
+main #form-container {
+    display: grid;
+    place-items: center;
+    padding: 0 50px;
+}
+
+main form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+form input,
+textarea {
+    border: none;
+    outline: none;
+    padding: 12px;
+    font-size: 20px;
+    font-weight: 400;
+    resize: none;
+    font-family: inherit;
+}
+
+form #submit {
+    width: 20%;
+    padding: 8px 0;
+    cursor: pointer;
+    background-color: var(--red);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+form #submit:hover {
+    background-color: black;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+    gap: 15px;
+}
+
+footer #social-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#social-links>a {
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    background-color: black;
+    transition: all 0.3s ease;
+}
+
+#social-links>a:hover {
+    background-color: var(--red);
+}
+
+footer #social-links i {
+    font-size: 20px;
+    color: white;
+}
+
+footer a:link {
+    color: black;
+}
+
+footer #call-or-mail>a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <!-- FONTAWESOME FOR ICONS-->
+    <script src="https://kit.fontawesome.com/5678c3e1ef.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <section>
+            <h2>Temperature Converter</h2>
+            <div id="container">
+                <div id="input-container">
+                    <input type="number" name="input-value" id="input-value" placeholder="Enter Temperature">
+                </div>
+                <div id="from-to">
+                    <div>
+                        <p>From :</p>
+                        <select name="from-unit" id="from-unit">
+                            <option value="C">Celsius</option>
+                            <option value="F">Fahrenheit</option>
+                            <option value="K">Kelvin</option>
+                        </select>
+                    </div>
+                    <div id="icon-container">
+                        <i class="fa-solid fa-right-left"></i>
+                    </div>
+                    <div>
+                        <p>To :</p>
+                        <select name="to-unit" id="to-unit">
+                            <option value="C">Celsius</option>
+                            <option value="F">Fahrenheit</option>
+                            <option value="K">Kelvin</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="btn-container">
+                    <button id="convert-btn">Convert</button>
+                </div>
+                <div id="result">
+                    <input type="text" name="result-value" id="result-value" readonly>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

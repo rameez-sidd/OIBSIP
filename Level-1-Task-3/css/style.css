@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+input {
+    outline: none;
+    border: none;
+}
+
+::placeholder {
+    color: rgb(216, 216, 216);
+}
+
+main {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    overflow: hidden;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0px 0px 9px 3px #00000070;
+}
+
+section h2 {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 900;
+}
+
+section #container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#container input {
+    width: 100%;
+    padding: 12px;
+    font-size: 19px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.336);
+    color: white;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+#container #from-to {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#from-to p {
+    font-weight: 600;
+}
+
+#from-to #icon-container {
+    align-self: flex-end;
+    padding: 6px;
+}
+
+#from-to div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+#container select {
+    padding: 8px;
+    padding-right: 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+#container select:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#container #btn-container {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#btn-container #convert-btn {
+    font-size: 18px;
+    border-radius: 8px;
+    background: black;
+    color: white;
+    padding: 8px 20px;
+}
+
+#btn-container #convert-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
